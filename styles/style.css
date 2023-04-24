@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-   max-width: 1150px;
+   width: 1150px;
    margin: 0 auto;
    box-sizing: border-box;
 }
@@ -167,6 +167,7 @@ list-style: none;
    padding-right: 125px;
    padding-top: 151px;
    box-sizing: border-box;
+   min-width: 1400px;
    height: 1844px;
    background-color: #121212;
 }
@@ -200,6 +201,7 @@ list-style: none;
 .section__image {
    position: relative;
    display: block;
+   min-width: 1400px;
    height: 717px;
    background: url(/resources/project.png);
 }
@@ -216,6 +218,7 @@ list-style: none;
 }
 
 .section__contacts {
+   min-width: 1400px;
    height: 553px;
 }
 
@@ -261,6 +264,7 @@ list-style: none;
 .footer {
    padding-top: 60px;
    box-sizing: border-box;
+   min-width: 1400px;
    height: 229px;
    background-color: #121212;
 }
