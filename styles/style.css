@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: 'Manrope', sans-serif;
    font-weight: 400;
@@ -55,6 +59,7 @@ list-style: none;
    font-size: 60px;
    line-height: 60px;
    color: #121212;
+   letter-spacing: -0.03em;
 }
 
 .main__imgblock {
@@ -92,6 +97,7 @@ list-style: none;
    line-height: 61px;
    color: #121212;
    margin-bottom: 30px;
+   letter-spacing: -0.03em;
 }
 
 .main__btn-link {
@@ -201,9 +207,13 @@ list-style: none;
 .section__image {
    position: relative;
    display: block;
+   margin-bottom: 151px;
    min-width: 1400px;
    height: 717px;
    background: url(/resources/project.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 50%;
 }
 
 .section__image span {
@@ -222,12 +232,17 @@ list-style: none;
    height: 553px;
 }
 
-.section__contacts img {
-   margin-top: 151px;
+.section__contacts:before {
+   content: '';
+   display: block;
    margin-left: 125px;
    margin-bottom: 13px;
    width: 13px;
    height: 22px;
+   background-image: url('/resources/phone.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50%;
 }
 
 .section__contacts h2 {
@@ -240,7 +255,8 @@ list-style: none;
    color: #121212;
 }
 
-.section__contacts-phone {
+.section__contacts-phone a {
+   display: inline-block;
    margin-left: 125px;
    margin-bottom: 30px;
    font-weight: 400;
@@ -248,9 +264,11 @@ list-style: none;
    line-height: 60px;
    letter-spacing: -0.03em;
    color: #121212;
+   text-decoration: none;
 }
 
-.section__contacts-mail {
+.section__contacts-mail a {
+   display: inline-block;
    margin-left: 125px;
    margin-bottom: 160px;
    font-weight: 400;
@@ -259,6 +277,7 @@ list-style: none;
    letter-spacing: -0.03em;
    color: #121212;
    opacity: 0.5;
+   text-decoration: none;
 }
 
 .footer {
